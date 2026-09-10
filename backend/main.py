@@ -15,6 +15,8 @@ origins = [
     "http://localhost:5500",
     "http://127.0.0.1:5500",
     "https://nova-frontend-mjxy6ku0l-angel-gupta037.vercel.app",
+    "https://nova-frontend-git-main-angel-gupta037.vercel.app",
+    "https://nova-frontend-7l92bmjak-angel-gupta037.vercel.app",
 ]
 
 app.add_middleware(
