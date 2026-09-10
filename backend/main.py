@@ -2,17 +2,15 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from database import Base, engine
-import models  # noqa: F401 — must be imported so Base knows about these tables
+import models  
 
 from routers import auth_routes, projects, tasks
 
-# Creates tables if they don't exist yet. Fine for this project;
-# a real production app would use Alembic migrations instead.
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="NOVA API", description="Team Productivity Platform API")
 
-# Update this list with your actual deployed Vercel URL once you have it.
+
 origins = [
     "http://localhost:5500",
     "http://127.0.0.1:5500",

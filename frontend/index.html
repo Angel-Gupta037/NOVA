@@ -7,8 +7,7 @@
 </head>
 <body>
   <script>
-    // No UI needed here — this page's only job is to route the visitor
-    // to the right place based on whether they're already logged in.
+  
     const token = localStorage.getItem("nova_token");
     window.location.href = token ? "dashboard.html" : "login.html";
   </script>

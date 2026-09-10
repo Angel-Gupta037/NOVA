@@ -20,7 +20,6 @@ async function apiRequest(path, { method = "GET", body = null } = {}) {
     return null;
   }
 
-  // 204 No Content has no JSON body to parse
   const data = res.status === 204 ? null : await res.json();
 
   if (!res.ok) {

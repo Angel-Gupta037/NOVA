@@ -12,18 +12,14 @@ from sqlalchemy.orm import Session
 from database import get_db
 import models
 
-load_dotenv()  # reads .env into os.environ when running locally
-
-# On Render, set SECRET_KEY as a real environment variable in the
-# dashboard instead of uploading .env — this fallback is dev-only.
+load_dotenv()  
 SECRET_KEY = os.environ.get("SECRET_KEY", "dev-only-change-me")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24 * 7  # 7 days
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-# tokenUrl just tells the FastAPI docs UI where to get a token from;
-# it doesn't have to be called "login" for this to work.
+
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 
 

@@ -13,7 +13,7 @@ async function loadUser() {
     const user = await apiRequest("/me");
     if (user) document.getElementById("user-name").textContent = user.name;
   } catch (err) {
-    // Non-fatal — the greeting just won't show a name.
+    
   }
 }
 

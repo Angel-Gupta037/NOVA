@@ -6,8 +6,8 @@ NOVA is a full-stack team project management platform. Teams can create projects
 
 Built for a full-stack developer internship assessment.
 
-**Live demo:** _[add your deployed frontend URL here once live]_
-**API docs:** _[add your deployed backend URL here]/docs_
+**Live demo:** https://nova-frontend-mjxy6ku0l-angel-gupta037.vercel.app
+**API docs:** https://nova-backend-t7ex.onrender.com/docs
 
 ---
 
