@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVA</title>
+</head>
+<body>
+  <script>
+    // No UI needed here — this page's only job is to route the visitor
+    // to the right place based on whether they're already logged in.
+    const token = localStorage.getItem("nova_token");
+    window.location.href = token ? "dashboard.html" : "login.html";
+  </script>
+</body>
+</html>

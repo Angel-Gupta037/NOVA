@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log in — NOVA</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="auth-shell">
+
+    <!-- Brand panel -->
+    <div class="brand-panel">
+      <div class="brand-mark">
+        <span>NOVA</span>
+        <span class="tag">Team Productivity Platform</span>
+      </div>
+
+      <div class="brand-copy">
+        <h1>Plan. Collaborate. Deliver.</h1>
+        <p>One place for your team's projects, tasks and progress — no more scattered spreadsheets.</p>
+      </div>
+
+      <div class="brand-footer">
+        <a href="signup.html" class="btn-pill btn-pill--outline">
+          Create an account
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M13 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="brand-accent" aria-hidden="true"></div>
+    </div>
+
+    <!-- Form panel -->
+    <div class="form-panel">
+      <div class="form-card">
+        <p class="eyebrow">Welcome back</p>
+        <h2>Log in to your account</h2>
+
+        <div class="form-error-banner" id="error-banner"></div>
+
+        <form id="login-form" novalidate>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email" />
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required autocomplete="current-password" />
+          </div>
+
+          <button type="submit" class="btn-pill btn-pill--solid">
+            Log in
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </button>
+        </form>
+
+        <hr class="divider-line" />
+
+        <p class="switch-line">
+          Don't have an account? <a href="signup.html">Sign up</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
